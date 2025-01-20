@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "AntifraudSPM",
+    platforms: [.iOS(.v15)],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
@@ -19,5 +20,8 @@ let package = Package(
         .testTarget(
             name: "AntifraudSPMTests",
             dependencies: ["AntifraudSPM"]),
+        .binaryTarget(name: "AntifraudSDK",
+                      url: "https://github.com/spvagelis/AntifraudSPM/releases/download/1.0.0/AntifraudSDK.xcframework.zip",
+                      checksum: "d481063806de0a4176c64c558bb735e9b74b70f0d4e797df34cc7fe6360dc6a1")
     ]
 )
