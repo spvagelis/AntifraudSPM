@@ -26,7 +26,7 @@ let package = Package(
             name: "AntifraudSPMTests",
             dependencies: ["AntifraudSPM"]),
         .binaryTarget(name: "AntifraudSDK",
-                      url: "https://github.com/spvagelis/AntifraudSPM/releases/download/1.0.1/AntifraudSDK.xcframework.zip",
-                      checksum: "d481063806de0a4176c64c558bb735e9b74b70f0d4e797df34cc7fe6360dc6a1")
+                      url: "https://github.com/spvagelis/AntifraudSPM/releases/download/1.0.2/AntifraudSDK.xcframework.zip",
+                      checksum: "654d2edc4c56f6034babad8df0bf9bd8f935ccdb3ef1e8846b06c79c31f2bbeb")
     ]
 )
