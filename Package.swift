@@ -12,12 +12,15 @@ let package = Package(
             name: "AntifraudSPM",
             targets: ["AntifraudSPM"]),
     ],
+    dependencies: [.package(url: "https://github.com/CocoaLumberjack/CocoaLumberjack.git", from: "3.8.0"),
+                  ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "AntifraudSPM",
-            dependencies: ["AntifraudSDK"]
+            dependencies: ["AntifraudSDK", .product(name: "CocoaLumberjack", package: "CocoaLumberjack")],
+            publicHeadersPath: ""
         ),
         .testTarget(
             name: "AntifraudSPMTests",
