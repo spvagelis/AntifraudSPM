@@ -10,6 +10,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "AntifraudSPM",
+            type: .dynamic,
             targets: ["AntifraudSPM"]),
     ],
     dependencies: [.package(url: "https://github.com/CocoaLumberjack/CocoaLumberjack.git", from: "3.8.0"),
@@ -25,7 +26,7 @@ let package = Package(
             name: "AntifraudSPMTests",
             dependencies: ["AntifraudSPM"]),
         .binaryTarget(name: "AntifraudSDK",
-                      url: "https://github.com/spvagelis/AntifraudSPM/releases/download/1.0.0/AntifraudSDK.xcframework.zip",
+                      url: "https://github.com/spvagelis/AntifraudSPM/releases/download/1.0.1/AntifraudSDK.xcframework.zip",
                       checksum: "d481063806de0a4176c64c558bb735e9b74b70f0d4e797df34cc7fe6360dc6a1")
     ]
 )
