@@ -19,8 +19,7 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "AntifraudSPM",
-            dependencies: ["AntifraudSDK", .product(name: "CocoaLumberjack", package: "CocoaLumberjack")],
-            publicHeadersPath: ""
+            dependencies: [.target(name: "AntifraudSDK"), .product(name: "CocoaLumberjack", package: "CocoaLumberjack")]
         ),
         .testTarget(
             name: "AntifraudSPMTests",
