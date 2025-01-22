@@ -1,5 +1,5 @@
 {
-  "originHash" : "a4957b9d231c0b2af3e7ab262b315d7e6d68c1620274a7b113933a7905773a0e",
+  "originHash" : "ff0ff33dd15e266adc8c41901fd2ce1cdd4774c64a3c17fa8a7f6763113ec168",
   "pins" : [
     {
       "identity" : "cocoalumberjack",
@@ -8,6 +8,15 @@
       "state" : {
         "revision" : "4b8714a7fb84d42393314ce897127b3939885ec3",
         "version" : "3.8.5"
+      }
+    },
+    {
+      "identity" : "sharedspm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/spvagelis/sharedSPM.git",
+      "state" : {
+        "revision" : "3eb8bcc18e08e7480e8407f677124a87a03b9e17",
+        "version" : "1.0.2"
       }
     },
     {
